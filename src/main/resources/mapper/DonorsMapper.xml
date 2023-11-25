@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.hospitalbloodbank.mapper.DonorsMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.hospitalbloodbank.entity.Donors">
+            <id property="donorID" column="DonorID" jdbcType="INTEGER"/>
+            <result property="name" column="Name" jdbcType="VARCHAR"/>
+            <result property="age" column="Age" jdbcType="INTEGER"/>
+            <result property="gender" column="Gender" jdbcType="VARCHAR"/>
+            <result property="contactNumber" column="ContactNumber" jdbcType="VARCHAR"/>
+            <result property="bloodType" column="BloodType" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        DonorID,Name,Age,
+        Gender,ContactNumber,BloodType
+    </sql>
+</mapper>
